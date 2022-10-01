@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  width: 100%;
+  background: rgba(0, 157, 255, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 157, 255, 0.8),
+    rgba(206, 0, 255, 0.7)
+  );
+}
+
+.header-content {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.6em;
+  color: rgb(252, 252, 252);
+  font-weight: 400;
+  text-shadow: 0.1em 0.1em 0.1em rgb(49, 41, 61);
+}
+
+header h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: rgb(49, 41, 61);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+header a,
+header a:visited {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  padding-bottom: 0.1em;
+}
+
+header a:hover {
+  color: rgb(49, 41, 61);
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(49, 41, 61);
+  font-size: 1.4em;
+  margin: 2em;
+}
+
+nav a {
+  margin: 1em;
+}
+
+nav a,
+nav a:visited {
+  padding-bottom: 0.1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+  text-shadow: 0.1em 0.1em 0.1em rgb(49, 41, 61);
+  color: rgb(252, 252, 252);
+}
+
+nav a:hover,
+nav a:active {
+  color: rgb(49, 41, 61);
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+}
+
+@media only screen and (max-width: 800px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header h2 {
+    font-size: 1.4em;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+section {
+  margin-top: -0.6em;
+}
+
+section#section-one {
+  background: rgba(0, 255, 98, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 255, 98, 0.8),
+    rgba(0, 157, 255, 0.7)
+  );
+}
+
+section#section-one .grid {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 4fr;
+  /* grid-template-rows: 1fr 1fr 4fr; */
+  padding: 2em 1em;
+  grid-gap: 1em;
+}
+
+section h1 {
+  color: rgb(49, 41, 61);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 0.8em 0 0 0.6em;
+}
+
+section h2 {
+  color: rgb(49, 41, 61);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.box {
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 0.1em solid rgb(49, 41, 61);
+  box-shadow: 0.1em 0.1em 0.1em rgba(252, 252, 252, 0.8);
+  border-radius: 0.2em;
+  font-size: 2em;
+  padding: 2rem;
+}
+
+.s1-a {
+  grid-column: 1 / span 3;
+  /* grid-row: 1 / span 2; */
+}
+
+.s1-b {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 4;
+}
+
+.s1-c {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.s1-d {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.s1-e {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 1;
+}
+
+.s1-f {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  background: rgba(0, 157, 255, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 157, 255, 0.8),
+    rgba(206, 0, 255, 0.7)
+  );
+}
+
+footer p {
+  font-family: "Oswald", sans-serif;
+  text-shadow: 0.1em 0.1em 0.1em #31293d;
+  letter-spacing: 0.1em;
+  color: rgb(252, 252, 252);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0.4em;
+}
+
+footer a,
+footer a:visited {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  padding-bottom: 0.1em;
+}
+
+footer a:hover,
+footer a:active {
+  color: rgb(49, 41, 61);
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+}
+
+button {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  background: white;
+  border: 1px solid;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  background: tomato;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.label {
+  color: tomato;
+}
+
+.small {
+  font-size: 0.8rem;
+}
